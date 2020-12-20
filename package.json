@@ -1,0 +1,24 @@
+{
+  "name": "node-react-ts-starter-snowpack",
+  "version": "1.0.0",
+  "description": "A starter repo for NodeJS and React in typescript using TS-Node and Snowpack",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherihung/node-react-ts-starter-snowpack.git"
+  },
+  "author": "Cheri Hung",
+  "license": "MIT",
+  "engines": {
+    "node": "12.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/cherihung/node-react-ts-starter-snowpack/issues"
+  },
+  "homepage": "https://github.com/cherihung/node-react-ts-starter-snowpack#readme",
+  "devDependencies": {
+    "snowpack": "^2.18.5"
+  }
+}

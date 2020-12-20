@@ -1,0 +1,11 @@
+node_modules
+GENERAED
+dist
+yarn-error.log
+.DS_Store
+coverage
+build
+.build
+
+.vscode/*
+*.code-workspace
