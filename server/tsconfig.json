@@ -1,0 +1,17 @@
+{
+  "include": ["*.tsx", "*.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "**/*.spec.tsx", "**/*.spec.ts"],
+  "extends": "@tsconfig/node12/tsconfig.json",
+  "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "outDir": "SERVER_BUILD",
+      "baseUrl": "./",
+      "paths": {
+          "*": [
+              "../node_modules/*"
+          ]
+      }
+  }
+}

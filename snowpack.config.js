@@ -25,11 +25,11 @@ module.exports = {
   },
   devOptions: {
     port: 8080,
-    out: 'GENERATED',
+    out: 'WEB_BUILD',
     open: 'none'
   },
   buildOptions: {
-    /* ... */
+    clean: true,
   },
   proxy: {
     '/api': 'http://localhost:3000/api'

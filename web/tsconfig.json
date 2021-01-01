@@ -9,6 +9,7 @@
     "baseUrl": "./",
     /* paths - If you configure Snowpack import aliases, add them here. */
     "paths": {
+      "*": ["../node_modules/*"],
       "@web/*": ["*"]
     },
     /* noEmit - Snowpack builds (emits) files, not tsc. */

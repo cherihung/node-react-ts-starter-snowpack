@@ -3,5 +3,6 @@ build
 web_modules
 node_modules
 dist
-GENERATED
+WEB_BUILD
 .DS_Store
+.env
