@@ -4,5 +4,6 @@ web_modules
 node_modules
 dist
 WEB_BUILD
+SERVER_BUILD
 .DS_Store
 .env
