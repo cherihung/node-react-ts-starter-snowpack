@@ -1,6 +1,6 @@
 {
-  "include": ["web"],
-  "exclude": ["node_modules", "web/**/*.spec.tsx", "web/**/*.spec.ts"],
+  "include": ["*.tsx", "*.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "**/*.spec.tsx", "**/*.spec.ts"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
@@ -9,8 +9,7 @@
     "baseUrl": "./",
     /* paths - If you configure Snowpack import aliases, add them here. */
     "paths": {
-      "*": ["web_modules/.types/*"],
-      "@web/*": ["web/*"]
+      "@web/*": ["*"]
     },
     /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,

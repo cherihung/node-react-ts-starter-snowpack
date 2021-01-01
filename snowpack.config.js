@@ -1,15 +1,14 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
-    web: {url: '/_dist_'},
+    public: {url: '/'},
+    web: {url: '/dist'},
   },
   plugins: [
     [
-      '@snowpack/plugin-run-script',
+      '@snowpack/plugin-typescript',
       {
-        cmd: 'tsc -p tsconfig.web.json --noEmit',
-        watch: '$1 --watch'
+        args: '--project web/tsconfig.json'
       }
     ],
     [
