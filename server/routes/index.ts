@@ -4,7 +4,7 @@ import {defaultSuccessHandler, healthCheckHandler} from './handlers/common';
 
 const router = Router();
 
-router.get('/', defaultSuccessHandler);
+router.get('/api', defaultSuccessHandler);
 router.get('/health', healthCheckHandler);
 
 export default router;

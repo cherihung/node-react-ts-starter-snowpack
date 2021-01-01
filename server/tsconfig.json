@@ -6,7 +6,8 @@
       "allowSyntheticDefaultImports": true,
       "noImplicitAny": true,
       "moduleResolution": "node",
-      "outDir": "SERVER_BUILD",
+      "outDir": "../SERVER_BUILD",
+      "rootDir": ".",
       "baseUrl": "./",
       "paths": {
           "*": [
