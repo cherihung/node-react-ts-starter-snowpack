@@ -1,3 +1,6 @@
+const httpProxy = require('http-proxy');
+const proxy = httpProxy.createServer({ target: 'http://localhost:3000' });
+
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
@@ -17,23 +20,21 @@ module.exports = {
       '@snowpack/plugin-webpack'
     ]
   ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
+  packageOptions: {
     installTypes: true
   },
   devOptions: {
     port: 8080,
-    out: 'WEB_BUILD',
     open: 'none'
   },
   buildOptions: {
     clean: true,
+    out: 'WEB_BUILD',
   },
-  proxy: {
-    '/api': 'http://localhost:3000/api'
-  },
+  routes: [
+    { match: 'all', src: '/api/.*', dest: (req, res) => proxy.web(req, res) },
+    { match: 'routes', src: '.*', dest: '/index.html' },
+  ],
   alias: {
     '@web': './web'
   },
