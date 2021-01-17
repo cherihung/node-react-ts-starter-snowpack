@@ -1,7 +1,9 @@
 # NODE REACT TYPESCRIPT STARTER WITH SNOWPACK
 
-A typescript starter base for an SPA client running on an Express server.
+## Typescript starter base for a React client running on an Express server.
+
 Frontend web is built and bundled using [snowpack](https://github.com/snowpackjs/snowpack).
+
 Backend is built using TSC.
 
 ## Available Scripts
