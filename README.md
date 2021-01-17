@@ -1,22 +1,30 @@
 # NODE REACT TYPESCRIPT STARTER WITH SNOWPACK
 
-> ✨ Web Bootstrapped with Create Snowpack App (CSA).
+A typescript starter base for an SPA client running on an Express server.
+Frontend web is built and bundled using Snowpack.
+Backend is built using TSC.
 
 ## Available Scripts
 
 ### yarn start
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+Runs server and web in the development mode.
+Open http://localhost:8080 to view app in the browser.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+Server is proxy through the frontend. 
+Can be directly reached on port :3000/api 
 
 ### yarn build
 
-Builds production site to the `WEB_BUILD/` folder.
+Production build of server and web.
+Web builds production site to the `WEB_BUILD/` folder.
+Server builds procution to the `SERVER_BUILD/` folder. 
 
-### yarn test
 
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+### yarn start-web
+
+Start up web as an SPA without express server.
+
+### yarn start-server
+
+Start up server as a standlone express server.
